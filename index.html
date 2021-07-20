@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Survey on Demographics and Content Preferences of Multiple Disabilities
+      Community Members
+    </title>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="title">
+      Survey on Demographics and Content Preferences of Multiple Disabilities
+      Community Members
+    </h1>
+    <p id="description">
+      Welcome to this survey for members of the online groups for people with
+      multiple disabilities, caregivers, and allies, and subscribers to the blog
+      on life with multiple disabilities found at
+      <a target="_blank" href="http://livingwithmultipledisabilities.org/"
+        >http://livingwithmultipledisabilities.org</a
+      >. This survey is an attempt to get more information about who the members
+      of the community are and what types of content you would like to see on
+      the blog.
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Please enter your name."
+        required
+      />
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Please enter your email address."
+        required
+      />
+      <label id="number-label" for="number">Age:</label>
+      <input
+        id="number"
+        type="number"
+        min="10"
+        max="120"
+        placeholder="Please enter your age."
+        required
+      />
+      <label id="dropdown-label" for="dropdown">Gender:</label>
+      <select name="dropdown" id="dropdown">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+        <option value="nonbinary">Nonbinary</option>
+        <option ="Other">Other</option>
+        <option value="none">Prefer not to say</option>
+      </select>
+      <p>Do you subscribe to the blog on life with multiple disabilities?</p>
+      <label for="subscribed"
+        ><input
+          type="radio"
+          id="subscribed"
+          value="subscribed"
+          name="blog-subscriber"
+          required
+        />Yes</label
+      >
+      <label for="unsubscribed"
+        ><input
+          type="radio"
+          id="unsubscribed"
+          value="unsubscribed"
+          name="blog-subscriber"
+          required
+        />No</label
+      >
+      <p>What types of content would you be interested in seeing on the blog</p>
+      <label for="accessibility-reviews"
+        ><input
+          type="checkbox"
+          id="accessibility-reviews"
+          value="accessibility-reviews"
+          name="blog-content-preferences"
+          required
+        />Reviews on the accessibility of products, written by community
+        members</label
+      >
+      <label for="life-with-disabilities"
+        ><input
+          type="checkbox"
+          id="life-with-disabilities"
+          value="life-with-disabilities"
+          name="blog-content-preferences"
+          required
+        />Stories by community members about their lives and what it's like to
+        live with their disabilities</label
+      >
+      <label for="disability-awareness-posts"
+        ><input
+          type="checkbox"
+          id="disability-awareness-posts"
+          value="disability-awareness-posts"
+          name="blog-content-preferences"
+          required
+        />Posts by community members aimed at making community members and
+        outsiders aware of the symptoms of a condition or disability, or of one
+        aspect of living with it</label
+      >
+      <label for="organization-news"
+        ><input
+          type="checkbox"
+          id="organization-news"
+          value="organization-news"
+          name="blog-content-preferences"
+          required
+        />News about the process of starting a community organization for those
+        living with multiple disabilities</label
+      >
+      <label for="other"
+        ><input
+          type="checkbox"
+          id="other"
+          value="other"
+          name="blog-content-preferences"
+          required
+        />Another type of content not listed here</label
+      >
+      <label for="comments"
+        >Do you have any comments about this survey or the questions asked?
+        Optional.</label
+      >
+      <textarea id="comments"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
